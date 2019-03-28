@@ -13,8 +13,10 @@ Bundler.load.specs.sort_by(&:name).each do |spec|
   end
 end
 
-gems_by_name.sort_by! { |name, _| name.downcase }
+names = gems_by_name.keys
 
-gems_by_name.each do |name, gems|
-  puts "#{name}: #{gems.sort.join ', '}"
+names.sort_by! { |name, _| name.downcase }
+
+names.each do |name|
+  puts "#{name}: #{gems_by_name[name].sort.join ', '}"
 end
