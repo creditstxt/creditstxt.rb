@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby
 require 'bundler'
+
 gems_by_name = {}
 Bundler.load.specs.sort_by(&:name).each do |spec|
-  gem = "#{spec.name}"
+  gem = spec.name
   spec.authors.each do |name|
     if gems_by_name.key?(name)
       gems_by_name[name].push(gem)
