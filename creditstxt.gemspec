@@ -21,6 +21,7 @@ your Bundler-based project depends on.'
       f.match(%r{^(test|spec|features)/})
     end
   end
+  spec.bindir = ['exe']
   spec.executables = ['creditstxt']
 
   spec.add_dependency 'bundler'
