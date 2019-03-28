@@ -17,5 +17,5 @@ Gem::Specification.new do |spec|
   end
   spec.executables   = ["creditstxt"]
 
-  spec.add_dependency "bundler", "~> 1.16"
+  spec.add_dependency "bundler", "*"
 end
