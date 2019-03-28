@@ -23,5 +23,5 @@ your Bundler-based project depends on.'
   end
   spec.executables = ['creditstxt']
 
-  spec.add_dependency 'bundler', '*'
+  spec.add_dependency 'bundler'
 end
